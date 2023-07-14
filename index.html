@@ -23,13 +23,13 @@
           >
         </div>
         <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit"><i class="fa fa-search"></i></button>
+          <form class="search-form">
+            <input class="search-input" type="text" placeholder="Search.." name="search" id="site-search" />
+            <button type="submit" class="submit"><span>&#9906</span></i></button>
           </form>
           <ul class="language">
-            <li class="lang-item"><a href="#" class="link">EN</a></li>
-            <li class="lang-item"><a href="#" class="link">RU</a></li>
+            <li class="lang-item"><a href="#" class="lang-link link en">EN</a></li>
+            <li class="lang-item"><a href="#" class="lang-link link ru">RU</a></li>
           </ul>
         </div>
        </div>
@@ -39,16 +39,34 @@
     <main>
       <section class="hero">
         <div class="container">
-<h1 class="hero-heading">Genius DVR-530</h1>
+          <div class="hero-cont arrow prev">
+            <h1 class="hero-heading">Genius DVR-530</h1>
         <p class="desc">
           Отличная новость для всех автомобилистов - в интернет-супермаркете
           появился новый раздел автотоваров! Уже сегодня вы можете побаловать
           себя...
         </p>
         <button class="hero-btn">Buy Now</button>
-        <img src="" alt="" class="hero-img" />
+          </div>
+<div class="hero-cont arrow next">
+  <img src="./assets/img/hero-photo.png" alt="" class="hero-img" />
+</div>
+        
         </div>
         
+      </section>
+      <section class="navigation">
+        <div class="container">
+<nav class="site-nav">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="#" class="link nav-link">HOME</a></li>
+    <li class="nav-item"><a href="#" class="link nav-link">BASIC</a></li>
+    <li class="nav-item"><a href="#" class="link nav-link">PRO</a></li>
+    <li class="nav-item"><a href="#" class="link nav-link">BLOG</a></li>
+  </ul>
+</nav>
+        </div>
+
       </section>
       <section class="product">
         <div class="container">

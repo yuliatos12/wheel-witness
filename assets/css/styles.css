@@ -41,20 +41,22 @@ li {
 
 /* -----------------HEADER---------------------- */
 
- header {
-  background-image: url(../img/hero-bg.png);
-  background-size: 1600px;
-  
-  background-position-x: 0;
+header {
+  position: absolute;
+  width: 100%;
+
 }
-.header {
+.site-header {
   position: relative;
 }
 .logo {
+  display: block;
   position: absolute;
-left: 172px;
-top: 9px;
+  top: -8px;
+  float: left;
+ 
 }
+
 .cart-search {
   float: right;
 }
@@ -63,6 +65,8 @@ top: 9px;
 }
 .cart-container {
   margin-bottom: 34px;
+  /* background-color: #12161e; */
+  
 }
 .cart-item {
   font-family: "Arial";
@@ -71,6 +75,7 @@ top: 9px;
   font-weight: 600;
   color: #ffff;
   margin: 20px 0 10px 0;
+  padding: 5px 19px; 
 }
 .cart-item:not(:last-child) {
   margin-right: 36px;
@@ -82,8 +87,19 @@ top: 9px;
 .cart-item:last-child {
   background-image: url(../img/cart.png);
   background-repeat: no-repeat;
-  background-position: bottom 7px left;
+  background-position: bottom 11px left;
   padding-left: 25px;
+}
+.cart-item:not(:last-child):hover {
+  
+  transform: skew(20deg);
+  background-image: linear-gradient(
+    90deg,
+    rgb(3, 89, 163, 0.9) 0%,
+    rgb(78, 173, 255, 0.9) 100%
+  );
+border-left: #4198dd 1px solid;
+border-right: #4198dd 1px solid;
 }
 
 /* --------Search Form--------- */
@@ -125,6 +141,7 @@ input:focus::placeholder {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   border: 1px solid #46586e;
+  cursor: pointer;
 }
 .submit > span {
   display: block;
@@ -166,21 +183,22 @@ input:focus::placeholder {
 .hero {
   background-image: url(../img/hero-bg-up.jpg);
   background-size: cover;
-  font-family: 'Verdana';
-  
+  font-family: "Verdana";
+  padding-top: 122px;
 }
 .hero-heading {
   font-size: 48px;
   font-weight: 800;
   color: #0d2e5a;
   margin-bottom: 38px;
+  font-family: "Verdana-Bold";
 }
 .desc {
   font-size: 14px;
   line-height: 2;
   font-weight: 400;
   color: #fff;
-  width: 396px; 
+  width: 396px;
   margin-bottom: 50px;
 }
 
@@ -196,10 +214,10 @@ input:focus::placeholder {
   background-position-x: 36px, 0;
   background-position-y: 26px, 0;
   border-radius: 49px;
-border-top-right-radius: 21px;
-border-bottom-left-radius: 21px;
-margin-bottom: 70px;
-cursor: pointer;
+  border-top-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+  margin-bottom: 70px;
+  cursor: pointer;
 }
 .hero-cont {
   float: left;
@@ -213,7 +231,7 @@ cursor: pointer;
   position: absolute;
   top: 50%;
   bottom: 50%;
-  margin-top: 61px;
+  margin-top: 112px;
 }
 .prev::before {
   content: "";
@@ -227,26 +245,26 @@ cursor: pointer;
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
-   border-left: 1px solid #fff;
-   transform: rotate(-135deg);
-   right: 164px;
+  border-left: 1px solid #fff;
+  transform: rotate(-135deg);
+  right: 164px;
 }
 .hero-cont:nth-child(1) {
-margin-right: 71px;
-margin-top: 110px;
+  margin-right: 28px;
+  margin-top: 110px;
 }
 .hero-cont:nth-child(2) {
   margin-top: 29px;
-  }
+}
 /* _____________________________________________NAV SECTION________________________________________________ */
 .navigation {
   background-image: url(../img/bg.png);
   font-family: "Arial";
   font-size: 14px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 .navigation::before {
-  content: '';
+  content: "";
   display: block;
   height: 54px;
   width: 100%;
@@ -255,16 +273,18 @@ margin-top: 110px;
 
 .site-nav {
   margin: 0 133px;
+  margin-top: -5px;
 }
+
 .nav-item {
   float: left;
   transform: perspective(154px) rotateX(-45deg);
- 
+  
 }
 
 .nav-link {
   color: #666666;
-  padding: 15px 67px;
+  padding: 20px 67px;
   box-shadow: 0px 0px 10px 1px #727272;
   border-radius: 9px;
 }
@@ -305,12 +325,17 @@ margin-top: 110px;
 .product-photo > img {
   border-top: solid 8px #ffff;
   border-bottom: solid 8px #ffff;
-  box-shadow: 0px 0px 0px 2px #727272;
+  box-shadow: 0px 1px 5px 2px #727272;
   cursor: pointer;
 }
+.product-photo > img:hover {
+  box-shadow: 0px 0px 0px 3px #727272;
+}
+
 .product-photo {
   float: left;
 }
+
 .product-photo:not(:last-child) {
   margin-right: 25px;
 }
@@ -354,9 +379,11 @@ margin-top: 110px;
   line-height: 1.2;
   font-weight: 600;
 }
-.tec-char > li {
+.tec-char >li {
   font-size: 14px;
+  
 }
+
 .general-char,
 .tec-char,
 .camera-desc {
@@ -367,6 +394,8 @@ margin-top: 110px;
 }
 .char-def {
   float: right;
+  font-size: 14px;
+  text-align: left;
 }
 
 .camera-desc {
@@ -381,7 +410,6 @@ margin-top: 110px;
   line-height: 1.2;
   font-style: italic;
 }
-
 .position {
   float: left;
 }

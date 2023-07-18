@@ -16,18 +16,23 @@
         <a href="#" class="link"><img src="./assets/img/logo.png" alt="Site logo" class="logo"/></a>
        <div class="cart-search">
         <div class="cart-container">
-          <a href="#" class="link cart-item">Contact Us</a>
-          <a href="#" class="link cart-item">Cart</a>
-          <a href="#" class="link cart-item"
+          <ul>
+            <li class="cart-item"><a href="#" class="link">Contact Us</a></li>
+            <li class="cart-item"><a href="#" class="link">Cart</a></li>
+            <li class="cart-item"><a href="#" class="link cart"
             ><span class="text-color">1 Товар </span>| 1200 $</a
-          >
+          ></li>
+          </ul>
+          
+          
+          
         </div>
         <div class="search-container">
-          <form class="search-form">
+          <form class="search-form el">
             <input class="search-input" type="text" placeholder="Search.." name="search" id="site-search" />
             <button type="submit" class="submit"><span>&#9906</span></i></button>
           </form>
-          <ul class="language">
+          <ul class="language el">
             <li class="lang-item"><a href="#" class="lang-link link en">EN</a></li>
             <li class="lang-item"><a href="#" class="lang-link link ru">RU</a></li>
           </ul>
@@ -39,7 +44,7 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero-cont arrow prev">
+          <div class="hero-cont">
             <h1 class="hero-heading">Genius DVR-530</h1>
         <p class="desc">
           Отличная новость для всех автомобилистов - в интернет-супермаркете
@@ -48,10 +53,11 @@
         </p>
         <button class="hero-btn">Buy Now</button>
           </div>
-<div class="hero-cont arrow next">
+<div class="hero-cont">
   <img src="./assets/img/hero-photo.png" alt="" class="hero-img" />
 </div>
-        
+<div class="arrow next"></div>
+<div class="arrow prev"></div>
         </div>
         
       </section>
@@ -84,6 +90,7 @@
                   alt="Photo of camera"
                   width="81"
                   height="63"
+                  class="product-img"
                 />
               </li>
               <li class="product-photo">
@@ -92,6 +99,7 @@
                   alt="Photo of camera"
                   width="81"
                   height="63"
+                  class="product-img"
                 />
               </li>
               <li class="product-photo">
@@ -100,6 +108,7 @@
                   alt="Photo of camera"
                   width="81"
                   height="63"
+                  class="product-img"
                 />
               </li>
               <li class="product-photo">
@@ -108,6 +117,7 @@
                   alt="Photo of camera"
                   width="81"
                   height="63"
+                  class="product-img"
                 />
               </li>
             </ul>
@@ -125,54 +135,51 @@
               <li class="general-char-item common">Запись звука: <span>Да</span></li>
             </ul>
             <h3 class="common">Технические характеристики:</h3>
-            <ul class="tec-char">
-              <li>
-                Максимальное разрешение видео <span class="char-def">FullHD (1920x1080)</span>
-              </li>
-              <li>Встроенный GPS <span class="char-def">Нет</span></li>
-              <li>Количество камер <span class="char-def">1</span></li>
-              <li>Частота видео <span class="char-def">30 кадров/с</span></li>
-              <li>Формат видео <span class="char-def">H.264, AVI</span></li>
-              <li>Объектив, угол обзора <span class="char-def">120 °</span></li>
-              <li>Инфракрасная подсветка <span class="char-def">Нет</span></li>
-              <li>Запись звука <span class="char-def">Есть</span></li>
-              <li>Экран <span class="char-def">Встроенный 2.8" поворотный дисплей</span></li>
-              <li>Питание <span class="char-def">24 В, 12 В, Собственный аккумулятор</span></li>
-            </ul>
-
-            <!-- <dl class="tec-char">
-              <dt>Максимальное разрешение видео</dt>
-              <dd class="char-def">FullHD (1920x1080)</dd>
-
-              <dt>Встроенный GPS</dt>
-              <dd class="char-def">Нет</dd>
-
-              <dt>Количество камер</dt>
-              <dd class="char-def">1</dd>
-
-              <dt>Частота видео</dt>
-              <dd class="char-def">30 кадров/c</dd>
-
-              <dt>Формат видео</dt>
-              <dd class="char-def">H.264, AVI</dd>
-
-              <dt>Объектив, угол обзора</dt>
-              <dd class="char-def">120 °</dd>
-
-              <dt>Инфракрасная подсветка</dt>
-              <dd class="char-def">Нет</dd>
-
-              <dt>Запись звука</dt>
-              <dd class="char-def">Есть</dd>
-
-              <dt>Экран</dt>
-              <dd class="char-def">Встроенный 2.8" поворотный дисплей</dd>
-
-              <dt>Питание</dt>
-              <dd class="char-def">24 В, 12 В, Собственный аккумулятор</dd> -->
-
-            </dl>
+  
+            <table class="tec-char">
+              <tr>
+                <td class="char-name">Максимальное разрешение видео</td>
+                <td class="char-def">FullHD (1920x1080)</td>
+              </tr>
+              <tr>
+                <td class="char-name">Встроенный GPS</td>
+                <td class="char-def">Нет</td>
+              </tr>
+              <tr>
+                <td class="char-name">Количество камер</td>
+                <td class="char-def">1</td>
+              </tr>
+              <tr>
+                <td class="char-name">Частота видео</td>
+                <td class="char-def">30 кадров/с</td>
+              </tr>
+              <tr>
+                <td class="char-name">Формат видео</td>
+                <td class="char-def">H.264, AVI</td>
+              </tr>
+              <tr>
+                <td class="char-name">Объектив, угол обзора</td>
+                <td class="char-def">120 °</td>
+              </tr>
+              <tr>
+                <td class="char-name">Инфракрасная подсветка</td>
+                <td class="char-def">Нет</td>
+              </tr>
+              <tr>
+                <td class="char-name">Запись звука</td>
+                <td class="char-def">Есть</td>
+              </tr>
+              <tr>
+                <td class="char-name">Экран</td>
+                <td class="char-def">Встроенный 2.8" поворотный дисплей</td>
+              </tr>
+              <tr>
+                <td class="char-name">Питание</td>
+                <td class="char-def">24 В, 12 В, Собственный аккумулятор</td>
+              </tr>
+            </table>
             <h3 class="common">Описание Gazer F410</h3>
+
             <p class="camera-desc">
               Описание Gazer F410 Многофункциональный автомобильный
               видеорегистатор Gazer F410 обеспечивает высочайшее качество записи
@@ -227,31 +234,23 @@
       <footer>
         <div class="site-footer container">
           <ul class="partners element">
-            <li>
-              <a href="#" target="_blank" class="paypal link partners-link"></a>
+            <li class="paypal link partners-link">
+            
             </li>
-            <li>
-              <a href="#" target="_blank" class="visa link partners-link"></a>
+            <li class="visa link partners-link">
+              
             </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                class="mastercard link partners-link"
-              ></a>
+            <li class="mastercard link partners-link">
+              
             </li>
-            <li>
-              <a href="#" target="_blank" class="cirrus link partners-link"></a>
+            <li class="cirrus link partners-link">
+              
             </li>
-            <li>
-              <a href="#" target="_blank" class="two-co link partners-link"></a>
+            <li class="two-co link partners-link">
+              
             </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                class="discover link partners-link"
-              ></a>
+            <li class="discover link partners-link">
+              
             </li>
           </ul>
           <p class="footer-text element">Copyright © 2013. Wheel Witness</p>

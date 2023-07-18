@@ -62,9 +62,11 @@ header {
 }
 .search-container {
   float: right;
+  clear: right;
 }
 .cart-container {
-  margin-top: 26px;  
+  margin-top: 26px; 
+  float: right; 
 }
 .cart-item > .link{
   font-family: "Arial";
@@ -79,7 +81,7 @@ header {
 .cart-item {
   float: left; 
   /* transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  transition: background-image 250ms linear, transform 250ms;
+  transition: opacity 250ms linear, transform 250ms;
 }
 
 .cart-item:not(:last-child) {
@@ -133,7 +135,7 @@ border-right: #4198dd 1px solid;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   outline: none;
-  box-shadow: inset 1px 0px 4px rgba(0, 0, 0, 0.59);
+  box-shadow: inset 3px 0px 8px 0px rgba(0, 0, 0, 0.59);
 }
 ::placeholder {
   color: #ffff;
@@ -383,6 +385,7 @@ position: relative;
 }
 .product-photo {
   float: left;
+  position: relative;
 }
 
 .product-photo:not(:last-child) {
@@ -441,12 +444,11 @@ font-size: 16px;
   font-weight: 400;
 }
 .char-name {
-  font-size: 14px;
-  width: 170px;
-  padding-right: 17px;
+  font-size: 12px;
+  width: 226px;
 }
 .char-def {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .camera-desc {
@@ -478,12 +480,10 @@ font-size: 16px;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 3.2;
-  line-height: 1;
+  line-height: 40px;
   color: #666666;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
   margin-bottom: 52px;
-  padding: 13px 0;
   background-image: url(../img/feature-shape.png);
   background-repeat: no-repeat;
   background-position: top center; 

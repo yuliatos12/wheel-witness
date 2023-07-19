@@ -61,6 +61,7 @@ header {
  
 }
 .search-container {
+  margin-top: 34px;
   float: right;
   clear: right;
 }
@@ -80,8 +81,8 @@ header {
 }
 .cart-item {
   float: left; 
-  /* transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  transition: opacity 250ms linear, transform 250ms;
+ opacity: 0.7;
+  transition: opacity 450ms;
 }
 
 .cart-item:not(:last-child) {
@@ -98,7 +99,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom 11px left;
   padding-left: 25px;
-  transition: transform 250ms;
+ 
 }
 .cart-item:not(:last-child):hover {
   transform: skew(20deg);
@@ -109,6 +110,7 @@ header {
   );
 border-left: #4198dd 1px solid;
 border-right: #4198dd 1px solid;
+opacity: 1;
 }
 .cart-item > .link:hover {
   transform: skew(-20deg); 
@@ -119,9 +121,7 @@ border-right: #4198dd 1px solid;
 
 
 /* --------Search Form--------- */
-.search-container {
-  margin-top: 34px;
-}
+
 .search-form {
   margin-right: 21px;
 }
@@ -271,14 +271,13 @@ input:focus::placeholder {
   width: 72px;
   height: 239px;
   background-repeat: no-repeat;
+  bottom: 205px;
 }
 .next {
   right: -118px;
-  bottom: 205px;
 }
 .prev {
   left: -118px;
-    bottom: 205px;
   transform: rotate(180deg);
 }
 /* _____________________________________________NAV SECTION________________________________________________ */
@@ -295,44 +294,31 @@ input:focus::placeholder {
   width: 100%;
   background-color: #000828;
 }
-.site-nav {
-  margin-top: -8px;
-}
+
 .nav-item {
-  float: left;
+  float: right;
+  margin-left: -124px;
   background-image: url(../img/nav-shape.png);
   background-repeat: no-repeat;
-  padding: 20px 79px;
+ 
 }
 .nav-item:hover {
   position: relative;
   background-image: url(../img/nav-shape2.png);
   z-index: 3;
-  margin-top: -8px;
+ 
 }
-.nav-item:nth-child(2) {
-margin-left: -123px;
-position: relative;
-    z-index: 2;
-}
-.nav-item:nth-child(3) {
-  margin-left: -107px;
-  position: relative;
-  z-index: 1;
-  }
-  .nav-item:nth-child(3):hover {
-    z-index: 4;
-  }
+
 .nav-item:nth-child(4) {
-  margin-left: -132px;
+  margin-left: 0;
   }
-  /* .nav-item:hover {
-    background-image: url(../img/nav-shape2.png);
-  
-  } */
+ 
 .nav-link {
   color: #666666;
-  padding: 20px 67px;
+  width: 330px;
+  display: block;
+  text-align: center;
+  line-height: 47px;
 }
 .nav-item:hover > .nav-link {
   color: #4198dd;
@@ -373,7 +359,7 @@ position: relative;
 }
 
 .product-photo:hover::before{
-  position: relative;
+  position: absolute;
   left: -30px;
   margin-left: 62px;
   margin-top: -10px;
